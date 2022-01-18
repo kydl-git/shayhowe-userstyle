@@ -1,0 +1,54 @@
+/* ==UserStyle==
+@name         learn.shayhowe.com
+@version      20220118.08.28
+@namespace    userstyles.world/user/killyouxz
+@description  A beginner's dark mode.
+@author       kydl
+@license      No License
+==/UserStyle== */
+
+@-moz-document url-prefix("https://learn.shayhowe.com/") {
+    body{
+        filter: invert(100%);
+    }
+    aside.aside{
+        filter:invert(100%);
+    }
+    
+    article.lesson, section.lead-promo {
+        margin: auto;
+        width: 50%;
+    }
+    a.lesson-anchor{
+        filter: invert(100%);
+        display: inline-block!important;
+        opacity: 1!important;
+    }
+    pre.highlight{
+        width: 100%!important;
+    }
+    h6, code, .fig figcaption p, #carbonads .carbon-poweredby, .aside p, .primary-logo span, .primary-nav strong, .landing-header h3, .recommended-courses-empty, .recommended-course-details, .lesson .lesson-anchor, .pagination ul strong{
+        color: #0087cc!important;
+    }
+    .btn[disabled], .highlight .rouge-gutter, .highlight .lineno:after, .course-overview-lessons a:before, .practice li:before, .sg-color-slate-lighter, .toc-number{
+        background-color: #31302a!important;
+    }
+    td.rouge-code > pre > *{
+        color: red; 
+    } 
+    nav.pagination{
+        margin-left: 1%!important;
+    } 
+    section.lead-promo > div.container{
+        margin: auto;
+        width: 80%;
+    }
+    section.container{
+        margin: auto;
+        width: 30%;
+    }
+    footer.primary-footer > div.clamp{
+        margin: auto;
+        width: 50%;
+    }
+    }
